@@ -1,0 +1,58 @@
+@import "./variables.scss";
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Light.ttf") format("truetype");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Bold.ttf") format("truetype");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-ExtraBold.ttf") format("truetype");
+    font-weight: 900;
+  }
+body {
+    font-family: Inter,sans-serif;
+    background-color: #F8F8F8;
+}
+.w-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 160px;
+    &.last {
+      padding-bottom: 160px;
+      background-color: white;
+    }
+}
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $lightgray;
+    font-size: 16px;
+    line-height: 130%;
+}
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 500;
+}
