@@ -9,10 +9,13 @@ const getProjects = createSelector([getFilter, getItems], (filter, items) => {
       project.category.includes(filter)
     );
   });
+
+const getModalState = (state) => state.projects.modal;
   
   export default {
     getFilter,
     getItems,
     getProjects,
+    getModalState
   };
   

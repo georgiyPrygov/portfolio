@@ -5,7 +5,13 @@ const changeFilter = text => dispatch => {
 
     console.log(text);
 }
+const changeModalState = modalState => dispatch => {
+    dispatch(projectsActions.changeModalState(modalState));
+
+    console.log(modalState);
+}
 
 export default {
-    changeFilter
+    changeFilter,
+    changeModalState
 }

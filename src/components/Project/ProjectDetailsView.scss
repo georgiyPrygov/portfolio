@@ -1,0 +1,118 @@
+@import "../../variables.scss";
+.project-heading {
+  margin-top: 0;
+  color: $mainblue;
+  font-size: 75px;
+  line-height: 110%;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.cover-media {
+  padding: 40px 0;
+}
+.contents {
+  margin-left: 34.33%;
+  .description.project {
+    width: 40%;
+  }
+}
+.cover-media {
+  video {
+    object-fit: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    max-width: 790px;
+  }
+}
+.section {
+  &.video {
+    padding-top: 70px;
+    .w-container {
+      background-color: $lightgray;
+    }
+  }
+  &.first-project {
+    padding-top: 80px;
+  }
+  &.project-last {
+    padding: 100px 0;
+    .w-layout-grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      grid-template-columns: 30% 1fr;
+      .description {
+        margin-bottom: 30px;
+      }
+      .go-to-project_ink-block {
+        padding-bottom: 7px;
+        align-self: flex-start;
+        border-bottom: 1px solid rgba(29, 29, 31, 0.2);
+        transition: 0.3s;
+        color: #1d1d1f;
+        line-height: 120%;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+}
+.back-to-projects {
+  cursor: pointer;
+  padding: 16px;
+  align-self: center;
+  transition: 0.3s;
+  color: #787878;
+  font-size: 16px;
+  line-height: 120%;
+  text-decoration: none;
+  text-transform: none;
+  &:hover {
+    color: black;
+  }
+}
+@media (max-width: $bp-tablet) {
+  .contents {
+    margin: 0;
+    .description.project {
+      width: 100%;
+    }
+  }
+  .project-heading {
+    margin-bottom: 20px;
+    font-size: 35px;
+  }
+  .description_wrap_grid.agency {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: start;
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: span 2;
+    grid-column-end: span 2;
+    font-size: 18px;
+    p {
+      margin-bottom: 20px;
+    }
+    .go-to-project_ink-block {
+      font-size: 12px;
+    }
+  }
+  .section {
+    &.project-last {
+      padding: 60px 0;
+    }
+    &.first-project {
+      padding-top: 60px;
+    }
+  }
+}

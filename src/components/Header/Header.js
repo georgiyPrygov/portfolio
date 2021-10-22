@@ -1,6 +1,10 @@
-import { Link, NavLink } from "react-router-dom";
+
+import React, { forwardRef } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "./Header.scss";
-const Header = () => {
+
+const Header = forwardRef(({scrollFunctions}, appRefs) => {
+  const location = useLocation().pathname;
   return (
     <header className='App-header'>
       <div className='header-content w-container'>
@@ -8,14 +12,17 @@ const Header = () => {
           <NavLink to='/'>GEORGIY PRYGOV</NavLink>
         </div>
         <div className='header-menu'>
-          <a href='#projects'>Projects</a>
-          <Link to='#services'>Services</Link>
-          <Link to='#skills'>Skills</Link>
-          <Link to='#contact'>Contact</Link>
+          { !location.match(/\d/) &&
+                    <React.Fragment>
+                      <div onClick={scrollFunctions.scrollToProjects}>Projects</div>
+                      <div onClick={scrollFunctions.scrollToSkills}>Skills</div>
+                      <div onClick={scrollFunctions.scrollToContact}>Contact</div>
+                    </React.Fragment>
+          }
         </div>
       </div>
     </header>
   );
-};
+})
 
 export default Header;
