@@ -25,10 +25,21 @@ const itemsInitialState = [
         siteUrl: 'https://www.mightyforms.com'
       },
       {
+        id: "6",
+        name: "Mightyforms app",
+        shortDescr: 'Form builder web-app, MEAN stack',
+        category: "web-app",
+        backgroundColor: "#16A2B8",
+        logoUrl: "/assets/img/previews/mf-app-preview.jpeg",
+        mainDescr: "Unlock powerful forms with limitless possibilities. Create and publish, get submissions, and analyze data. Automatically recover abandoned leads. Collect payments and donations; grow subscribers and more.",
+        videoUrl: '/assets/videos/mf-app-video.mp4',
+        siteUrl: 'https://app.mightyforms.com/'
+      },
+      {
         id: "3",
         name: "Soundnova",
         shortDescr: 'Sounds e-commerce website, Cognito framework based',
-        category: "business e-commerce",
+        category: "business e-commerce web-app",
         backgroundColor: "#1C193C",
         logoUrl: "/assets/img/previews/soundnova-preview.jpeg",
         mainDescr: "SOUND EFFECTS LIBRARY PROFESSIONAL SFX FOR GAMES, MOVIES, TRAILERS, CARTOONS, TV-SHOWS & ANY YOUR PROJECTS",
@@ -39,23 +50,12 @@ const itemsInitialState = [
         id: "4",
         name: "Phoode",
         shortDescr: 'Creators and photographers platform, Symphony framework based',
-        category: "business",
+        category: "business web-app",
         backgroundColor: "#a0945a",
         logoUrl: "/assets/img/previews/phoode-preview.jpeg",
         mainDescr: "Find the ideal creative professional, style, or technique for your food branding or advertising project",
         videoUrl: '/assets/videos/phoode-video.mp4',
         siteUrl: 'https://phoode.com'
-      },
-      {
-        id: "6",
-        name: "Mightyforms app",
-        shortDescr: 'Form builder web-app, MEAN stack',
-        category: "web-app",
-        backgroundColor: "#16A2B8",
-        logoUrl: "/assets/img/previews/mf-app-preview.jpeg",
-        mainDescr: "Unlock powerful forms with limitless possibilities. Create and publish, get submissions, and analyze data. Automatically recover abandoned leads. Collect payments and donations; grow subscribers and more.",
-        videoUrl: '/assets/videos/mf-app-video.mp4',
-        siteUrl: 'https://app.mightyforms.com/'
       },
     ]
 
@@ -69,10 +69,15 @@ const items = createReducer(itemsInitialState, {
 const filter = createReducer('business', {
   [actions.changeFilter]: (state, { payload }) => payload
 })
+const mobileMenuOpened = createReducer(false, {
+  [actions.showMobileMenu]: (state, { payload }) => payload,
+  [actions.hideMobileMenu]: (state, { payload }) => payload
+})
 
 
 export default combineReducers({
     items,
-    filter
+    filter,
+    mobileMenuOpened
   });
   

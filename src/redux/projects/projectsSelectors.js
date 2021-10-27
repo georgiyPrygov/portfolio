@@ -10,12 +10,12 @@ const getProjects = createSelector([getFilter, getItems], (filter, items) => {
     );
   });
 
-const getModalState = (state) => state.projects.modal;
+const getMobileMenuState = (state) => state.projects.mobileMenuOpened;
   
   export default {
     getFilter,
     getItems,
     getProjects,
-    getModalState
+    getMobileMenuState
   };
   

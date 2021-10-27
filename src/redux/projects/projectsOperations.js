@@ -5,13 +5,14 @@ const changeFilter = text => dispatch => {
 
     console.log(text);
 }
-const changeModalState = modalState => dispatch => {
-    dispatch(projectsActions.changeModalState(modalState));
-
-    console.log(modalState);
+const showMobileMenu= mobileMenuState => dispatch => {
+    dispatch(projectsActions.showMobileMenu(mobileMenuState));
 }
-
+const hideMobileMenu= mobileMenuState => dispatch => {
+    dispatch(projectsActions.hideMobileMenu(mobileMenuState));
+}
 export default {
     changeFilter,
-    changeModalState
+    showMobileMenu,
+    hideMobileMenu
 }
