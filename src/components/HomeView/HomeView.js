@@ -133,7 +133,7 @@ class HomeView extends Component {
               <div className="request-button-container">
                 <p className="request_txt">
                   Fill the form
-                  <br /> and get a free consultation
+                  <br /> to contact me
                 </p>
                 <div id="mf-modal-20ef09fd-dd62-4b8a-9f6d-aadab141dc80"> <div className="mf-modal-content"> <div className="mf-modal-body"> <span id="mf-close-20ef09fd-dd62-4b8a-9f6d-aadab141dc80"> <img alt="" width="17" height="17" src="data:image/gif;base64,R0lGODlhEQARAIAAAODn7P///yH5BAEHAAEALAAAAAARABEAAAIqBIKpab3v3EMyVHWtWZluf0za0XFNKDJfCq5i5JpomdUxqKLQVmInqyoAADs="/> </span> <div><div className="mighty-form" id="mf-20ef09fd-dd62-4b8a-9f6d-aadab141dc80"></div> </div> </div> </div> <div id="mf-overlay-20ef09fd-dd62-4b8a-9f6d-aadab141dc80" className="mf-overlay"></div> </div> <button className="blue-btn" id="btn-20ef09fd-dd62-4b8a-9f6d-aadab141dc80" data-submit-close="0"> Fill the form </button>
               </div>

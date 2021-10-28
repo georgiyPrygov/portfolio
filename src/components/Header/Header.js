@@ -73,9 +73,9 @@ const Header = forwardRef(
                 <NavLink to="/">GEORGIY PRYGOV</NavLink>
               </div>
               <div className="mobile-menu">
-                <div onClick={scrollFunctions.scrollToProjects}>Projects</div>
-                <div onClick={scrollFunctions.scrollToSkills}>Skills</div>
-                <div onClick={scrollFunctions.scrollToContact}>Contact</div>
+                <div onClick={ () => {scrollFunctions.scrollToProjects(); hideMobileMenu();}}>Projects</div>
+                <div onClick={() => {scrollFunctions.scrollToSkills(); hideMobileMenu();}}>Skills</div>
+                <div onClick={() => {scrollFunctions.scrollToContact();hideMobileMenu();}}>Contact</div>
               </div>
             </div>
           </div>
