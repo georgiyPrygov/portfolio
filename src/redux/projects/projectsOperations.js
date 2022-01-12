@@ -2,8 +2,6 @@ import projectsActions from "./projectsActions"
 
 const changeFilter = text => dispatch => {
     dispatch(projectsActions.changeFilter(text));
-
-    console.log(text);
 }
 const showMobileMenu= mobileMenuState => dispatch => {
     dispatch(projectsActions.showMobileMenu(mobileMenuState));

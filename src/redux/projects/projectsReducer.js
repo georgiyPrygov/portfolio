@@ -2,6 +2,17 @@ import { combineReducers, createReducer } from "@reduxjs/toolkit";
 import actions from './projectsActions';
 
 const itemsInitialState = [
+  {
+    id: "0",
+    name: "Agora",
+    shortDescr: 'Hotel management system + booking widget',
+    category: "web-app",
+    mainDescr: 'Hotel booking system + management system built in MERN stack',
+    backgroundColor: "#1976d2",
+    logoUrl: "/assets/img/previews/booking-image.jpg",
+    videoUrl: '/assets/videos/agora-movie.mp4',
+    siteUrl: 'https://booking.agora-chalet.com/'
+  },
       {
         id: "1",
         name: "Salvagedata",
