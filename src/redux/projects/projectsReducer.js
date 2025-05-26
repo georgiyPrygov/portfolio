@@ -10,8 +10,7 @@ const itemsInitialState = [
     mainDescr: 'Hotel booking system + management system built in MERN stack',
     backgroundColor: "#1976d2",
     logoUrl: "/assets/img/previews/booking-image.jpg",
-    videoUrl: '/assets/videos/agora-movie.mp4',
-    siteUrl: 'https://booking.agora-chalet.com/'
+    videoUrl: '/assets/videos/agora-movie.mp4'
   },
       {
         id: "1",
@@ -54,8 +53,7 @@ const itemsInitialState = [
         backgroundColor: "#1C193C",
         logoUrl: "/assets/img/previews/soundnova-preview.jpeg",
         mainDescr: "SOUND EFFECTS LIBRARY PROFESSIONAL SFX FOR GAMES, MOVIES, TRAILERS, CARTOONS, TV-SHOWS & ANY YOUR PROJECTS",
-        videoUrl: '/assets/videos/soundnova-video.mp4',
-        siteUrl: 'https://soundnova.net'
+        videoUrl: '/assets/videos/soundnova-video.mp4'
       },
       {
         id: "4",
@@ -68,6 +66,17 @@ const itemsInitialState = [
         videoUrl: '/assets/videos/phoode-video.mp4',
         siteUrl: 'https://phoode.com'
       },
+      {
+        id: "5",
+        name: "Hotel Content Builder",
+        shortDescr: 'AI content builder for hotels built in Next.js, Typescript, SCSS',
+        category: "web-app",
+        backgroundColor: "#028039",
+        logoUrl: "/assets/img/previews/hcb-image.jpg",
+        mainDescr: "Find hotel and generate content for it",
+        videoUrl: '/assets/videos/hcb-video.mp4',
+        siteUrl: 'https://hcb.resabee.ai/'
+      },
     ]
 
 
@@ -77,7 +86,7 @@ const items = createReducer(itemsInitialState, {
     [actions.fetchProjectsSuccess]: (state, { payload }) => payload
 })
 
-const filter = createReducer('business', {
+const filter = createReducer('web-app', {
   [actions.changeFilter]: (state, { payload }) => payload
 })
 const mobileMenuOpened = createReducer(false, {

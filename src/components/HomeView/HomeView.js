@@ -7,7 +7,7 @@ import projectsOperations from "../../redux/projects/projectsOperations";
 
 class HomeView extends Component {
   state = {
-    isActiveTab: "tab-1",
+    isActiveTab: "tab-3",
   };
 
   toggleTabActive = (e) => {

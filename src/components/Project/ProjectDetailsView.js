@@ -45,7 +45,9 @@ const Project = ({chosenId, projects}) => {
                     <p className="description">
                      {project.mainDescr}
                     </p>
-                    <a href={project.siteUrl}  rel="noreferrer" target="_blank" className="go-to-project_ink-block">Go to website</a>
+                    {project.siteUrl && (
+                      <a href={project.siteUrl}  rel="noreferrer" target="_blank" className="go-to-project_ink-block">Go to website</a>
+                    )}
                   </div>
                 </div>
               </div>
